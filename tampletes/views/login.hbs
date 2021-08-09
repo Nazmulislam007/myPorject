@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+</head>
+
+<body>
+    <div class="login-body">
+        {{>nav}}
+        <form action="/login" method="POST">
+            <h2>Log In</h2>
+            <label for="">Email Address or Username</label>
+            <input name="username" type="text">
+            <label for="">Password</label>
+            <input name="password" type="password">
+            <button class="btn1" type="submit">Log In</button>
+            <a href="/contact">Sign Up</a>
+            <a href="">Forgotten Password</a>
+            <p>You can also create account with Google and Facebook</p>
+            <button class="btn2"><i class="fab fa-google"></i> Continue with Google</button>
+            <button class="btn3"><i class="fab fa-facebook-f"></i> Continue with Facebook</button>
+        </form>
+        {{>footer}}
+    </div>
+    {{>js}}
+</body>
+
+</html>
